@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitFinder</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- search box -->
+
+        <div class="search-container">
+            <input type="text" name="" id="input" placeholder="Enter Github UserName" class="" />
+            <div id="search" onclick="getUser()">Search User</div>
+        </div>
+        <!-- Theame Chnage  -->
+        <div class="theme_mode">
+            <button id="mode_btn" onclick="change()">
+                <img id="mode_icon" height="40px" width="40px" src="./Dark.png" alt="Dark Mode">
+            </button>
+        </div>
+
+        <!-- profile results -->
+        <div class="profile-card">
+            <div class="main-info">
+                <img src="https://avatars.githubusercontent.com/u/93222536?s=400&u=df8585b2c907f07c9693e5a62fc302c7c942d2a0&v=4"
+                    alt="avatar" id="prof-img" />
+                <span class="name" id="name">Kamlesh Kumar Kohli</span>
+                <a href="" id="username">@Kohli2001</a>
+            </div>
+            <div class="bio">
+                <p id="bio">A JAVA FULL STACK DEVELOPER</p>
+                <p><span id="repo">18</span> Repositories</p>
+            </div>
+            <div class="follow">
+                <div class="followers">
+                    <span class="no" id="followers">0</span>
+                    Followers
+                </div>
+                <div class="following">
+                    <span class="no" id="following">2</span>
+                    Following
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <span>Created By @3K</span>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
